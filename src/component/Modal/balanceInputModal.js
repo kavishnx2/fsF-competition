@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "../../style/InputModal.css";
 import successSound from "../../music/treasure.mp3";
 import editBtn from "../../img/edit.png";
@@ -9,7 +9,7 @@ const BalanceInputModal = ({ setCount, count }) => {
   const [income, setIncome] = useState("");
   const [expense, setExpense] = useState("");
 
-  const [items, setItems] = useState([]);
+  const [items] = useState([]);
 
   console.log(items);
 

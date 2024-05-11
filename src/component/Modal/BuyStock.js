@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../../style/BuyStock.css";
 import successSound from "../../music/treasure.mp3";
 import rogers from "../../img/rogers.png";

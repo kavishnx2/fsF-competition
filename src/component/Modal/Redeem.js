@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../../style/InputModal.css";
 import successSound from "../../music/treasure.mp3";
 import cashingSound from "../../music/Cashing.mp3";
@@ -8,9 +8,6 @@ import Confetti from "react-confetti";
 
 const Redeem = ({ isCoinNew, setCoinNew }) => {
   const [openSuccess, setOpenSuccess] = useState(false);
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [amount, setAmount] = useState("");
 
   const [items, setItems] = useState([]);
   const [showCode, setShowCode] = useState(false);
@@ -31,22 +28,6 @@ const Redeem = ({ isCoinNew, setCoinNew }) => {
 
   const cashingAudio = new Audio(cashingSound);
   cashingAudio.loop = false;
-
-  function saveDataToLocalStorage() {
-    const existingData = JSON.parse(localStorage.getItem("Expenses"));
-
-    console.log(Array.isArray(existingData));
-
-    const data = {
-      Title: title,
-      description: description,
-      amount: amount,
-    };
-    existingData.push(data);
-
-    localStorage.setItem("Expenses", JSON.stringify(existingData));
-    setOpenSuccess(false);
-  }
 
   const reduceCoin = (amount) => {
     const items = JSON.parse(localStorage.getItem("BalanceCoin"));

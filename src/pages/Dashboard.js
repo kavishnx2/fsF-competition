@@ -1,9 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "../style/dashboard.css";
-import prt from "../img/card1.png";
-import streak from "../img/streak.png";
-import skill from "../img/skill.png";
-import visa from "../img/visa.png";
 import BalanceCard from "../component/BalanceCard";
 import StreakCard from "../component/streakCard";
 import Tab from "../component/tab";
