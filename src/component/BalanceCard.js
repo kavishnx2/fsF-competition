@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import balanceCardBackground from "../img/balanceCard.png";
-import editBtn from "../img/edit.png";
 import "../style/balanceCard.css";
 import BalanceInputModal from "./Modal/balanceInputModal";
 
@@ -68,7 +67,6 @@ const BalanceCard = ({ isBalanceNew, setBalanceNew }) => {
         <p id="topLeft">Balance</p>
       </div>
       <div className="image-top-right">
-        {/* <img src={editBtn} alt="Edit" /> */}
         <BalanceInputModal setCount={setCount} count={count} />
       </div>
       <div className="bottom-right">

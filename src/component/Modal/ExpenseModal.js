@@ -8,7 +8,7 @@ const ExpenseModal = ({
   isExpenseNew,
   setIsExpenseNew,
 }) => {
-  const [openSuccess, setOpenSuccess] = useState(false);
+  const [setOpenSuccess] = useState(false);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
@@ -49,7 +49,6 @@ const ExpenseModal = ({
     setOpenSuccess(false);
     setIsExpenseNew(isExpenseNew + 1);
 
-    // localStorage.setItem("Expenses", JSON.stringify([]));
   }
 
   function retrieveAllDataFromLocalStorage() {

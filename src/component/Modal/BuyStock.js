@@ -4,10 +4,6 @@ import successSound from "../../music/treasure.mp3";
 import rogers from "../../img/rogers.png";
 
 const BuyStock = ({ visible, setVisible }) => {
-  const [openSuccess, setOpenSuccess] = useState(false);
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [amount, setAmount] = useState("");
 
   const [items, setItems] = useState([]);
 
@@ -23,22 +19,6 @@ const BuyStock = ({ visible, setVisible }) => {
   const audio = new Audio(successSound);
   audio.loop = false;
 
-  function saveDataToLocalStorage() {
-    const existingData = JSON.parse(localStorage.getItem("Expenses"));
-
-    console.log(Array.isArray(existingData));
-
-    const data = {
-      Title: title,
-      description: description,
-      amount: amount,
-    };
-    existingData.push(data);
-
-    localStorage.setItem("Expenses", JSON.stringify(existingData));
-    setOpenSuccess(false);
-  }
-
   return (
     <div>
       <div
@@ -51,7 +31,7 @@ const BuyStock = ({ visible, setVisible }) => {
             &#x2716;
           </div>
 
-          <img src={rogers} />
+          <img alt="" src={rogers} />
 
           <h3 className="popup-title" style={{ color: "#484848" }}>
             Rs29.75
