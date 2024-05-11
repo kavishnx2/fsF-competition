@@ -1,0 +1,180 @@
+/* Container holding the image and the text */
+/* Container holding the image and the text */
+.bottom-left-investmentpage {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.center-bottom-investmentpage {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50px;
+    background-color: white;
+}
+
+.top-left-investment-page {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.image-top-right-investment-page {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.image-top-right-investment-page img {
+    height: 30px;
+    width: 30px;
+}
+
+.bottom-right-investment-page {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#incomeLabel-investment-page,
+#expenseLabel-investment-page,
+#bottomLeft-investment-page,
+#topLeft-investment-page,
+#topRight-investment-page,
+#bottomRight-investment-page {
+    font-family: Poppins;
+    font-size: 18px;
+    color: white;
+}
+
+#centered-investment-page {
+    font-size: 40px;
+}
+
+/* Bottom left text */
+.bottom-left-investment-page {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+}
+
+/* Top left text */
+.top-left-investment-page {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    font-weight: bold;
+}
+
+/* Top right text */
+.top-right-investment-page {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Bottom right text */
+.bottom-right-investment-page {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+}
+
+/* Centered text */
+.centered-investment-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+.scrollable-container-investment-page {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 500px;
+    padding: 20px;
+  }
+  
+  .scrollable-container-investment-page::-webkit-scrollbar {
+    width: 6px; /* Reduce the width of the scrollbar */
+  }
+  
+  .scrollable-container-investment-page::-webkit-scrollbar-thumb {
+    background-color: #8D64FF; /* Set the background color of the thumb */
+  }
+  
+  .scrollable-container-investment-page::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+
+.container-stock-investment-page {
+    width: 100%;
+    padding: 3px;
+}
+
+.stock-container-investment-page {
+    position: relative;
+    background-color: #e8e7e7;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.stock-row-investment-page {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.stock-image-investment-page {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-right: auto;
+}
+
+.stock-price-investment-page {
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.stock-lock-container-investment-page {
+    position: relative;
+
+}
+
+.overlay-investment-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 35px;
+}
+
+.stock-lock-container-investment-page.locked .overlay {
+    display: block;
+}
+
+.lock-content-investment-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.lock-image-investment-page {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}

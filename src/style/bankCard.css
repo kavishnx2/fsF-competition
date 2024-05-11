@@ -1,0 +1,159 @@
+
+
+.overall{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+
+
+}
+
+
+#transaction{
+    font-family: Poppins;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.transactions{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.button-container{
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-button {
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #8D64FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-sign {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.transactions-details {
+    padding-top: 7px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 20px;
+    opacity: 100%;
+   
+}
+
+
+
+
+.transactions-container{
+    
+    width: 220%;
+    height: 40px;
+    background-color: #F6F6F6;
+    
+    border-radius: 20px;
+}
+
+#transaction-title,
+#transaction-amount{
+    font-family: Poppins;
+    font-size: 16px;
+    color: black;
+}
+
+#expiryDate,
+#limit{
+  font-family: Poppins;
+  font-size: 10px;
+  color: black;
+  letter-spacing: 2px;
+  margin: 0px 0; 
+}
+
+#cardNumber,
+#lockedCardNumber,
+#validity,
+#cardDetails,
+
+#date {
+  font-family: Poppins;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 3px;
+  margin: 0px 0; /* Adjust the margin values as per your preference */
+}
+
+
+
+#validity,
+#date
+{
+  font-family: Poppins;
+  font-size: 10px;
+  color: black;
+  
+}
+
+.title-details{
+   
+    padding-left: 10px;
+}
+
+.first-row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first-column{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 90px;
+}
+
+#topRightVisa,
+#lockedCardNumber,
+#cardNumber
+
+{
+  font-family: Poppins;
+  font-size: 15px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.bottom-left-visa {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  /* gap: -50px; */
+}
+
+.top-right-visa {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+}
+
+

@@ -1,0 +1,118 @@
+/** Streak card **/
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+.streak-text {
+    font-family: Poppins;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.streak-text p {
+    margin: 0;
+}
+
+.streak-text p:first-child {
+    font-size: 18px;
+}
+
+.streak-text p:last-child {
+    font-size: 13px;
+}
+
+.streak-text img {
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+}
+
+.top-left-coin {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+
+.dollar-coin {
+    width: 61px;
+    /* Adjust the width as needed */
+    height: 61px;
+    /* Adjust the height as needed */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 28px;
+    background-color: #F985AF;
+    border-radius: 28px;
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
+    /* Adjust the margin as needed */
+    margin-left: 5px;
+    /* Adjust the margin as needed */
+    /* Center vertically */
+    letter-spacing: 8%;
+    /* Add the letter spacing */
+    cursor: pointer;
+}
+
+
+.column-configuration {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+    margin-left: 1px;
+    gap: 5px;
+}
+
+.streak-days {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.picture {
+    position: absolute;
+    bottom: 45px;
+    right: 40px;
+}
+
+.picture img {
+    width: 140px;
+    /* Adjust the width as needed */
+    height: 134px;
+    /* Adjust the height as needed */
+}
+
+
+.column-configuration p {
+    font-size: 16px;
+    color: #D8CAFF;
+    /* Adjust the color as needed */
+    margin: 0;
+}
+
+.column-configuration img {
+    width: 32px;
+    /* Adjust the width as needed */
+    height: 32px;
+    /* Adjust the height as needed */
+}

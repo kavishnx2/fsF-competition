@@ -1,0 +1,114 @@
+body {
+  background-color: #888888;
+  margin: 0;
+}
+
+
+.scrollable-container-expense-card {
+    overflow-y: auto;
+    overflow-x: hidden; /* Add this line to hide the horizontal scrollbar */
+    max-height: 300px;
+    padding: 20px;
+  }
+  
+  .scrollable-container-expense-card::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollable-container-expense-card::-webkit-scrollbar-thumb {
+    background-color: #8D64FF;
+  }
+  
+  .scrollable-container-expense-card::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+
+.expense-container-expense-card {
+  background-color: #ffffff;
+  border-radius: 35px;
+  padding: 20px;
+  width: 400px;
+}
+
+.expense-row1-expense-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.expense-row-expense-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.expense-title-expense-card {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.expense-image-expense-card {
+  width: 100px;
+  height: 30px;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.expense-description-expense-card {
+  font-size: 16px;
+  color: #888888;
+}
+
+.expense-due-date-expense-card {
+  font-size: 16px;
+  color: #888888;
+  margin-right: auto;
+}
+
+.expense-alarm-expense-card {
+  font-size: 16px;
+  color: #888888;
+  margin-right: auto;
+}
+
+.notification-icon-expense-card {
+  width: 50px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.expense-price-expense-card {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.addbutton-expense-card{
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-button-expense-card {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #8D64FF;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle-button-expense-card i {
+  color: white;
+}
+
+.circle-button-expense-card:hover {
+  opacity: 0.8;
+}

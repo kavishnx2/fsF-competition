@@ -1,0 +1,87 @@
+/* Container holding the image and the text */
+.bottom-left {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.center-bottom {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50px;
+    background-color: white;
+}
+
+.top-left {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.image-top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.image-top-right img {
+    height: 30px;
+    width: 30px;
+}
+
+.bottom-right {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#incomeLabel,
+#expenseLabel,
+#bottomLeft,
+#topLeft,
+#topRight,
+#bottomRight{
+    font-family: Poppins;
+    font-size: 18px;
+    color: white;
+}
+
+#centered {
+    font-size: 32px;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
