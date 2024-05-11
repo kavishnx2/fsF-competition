@@ -14,7 +14,7 @@
 }
 .stock-details{
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     margin: 0px 0;
 }

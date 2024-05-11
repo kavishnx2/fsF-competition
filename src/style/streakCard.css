@@ -76,7 +76,7 @@
 
 .column-configuration {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     margin-top: 20px;
     margin-left: 1px;
     gap: 5px;

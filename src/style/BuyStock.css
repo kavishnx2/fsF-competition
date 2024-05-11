@@ -140,7 +140,7 @@
 
  .popup-title {
      margin-bottom: 10px;
-     align-items: start;
+     align-items: flex-start;
  }
 
  .popup-subtitle {
