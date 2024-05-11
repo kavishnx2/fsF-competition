@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../style/LearnTab.css";
-import video from "../img/Group 88.png";
 import Investment from "./Investment";
 import Course from "./Course";
 import BuyStock from "./Modal/BuyStock";

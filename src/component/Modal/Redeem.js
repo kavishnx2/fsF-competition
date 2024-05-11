@@ -3,7 +3,6 @@ import "../../style/InputModal.css";
 import successSound from "../../music/treasure.mp3";
 import cashingSound from "../../music/Cashing.mp3";
 import "../../style/redeem.css";
-import editBtn from "../../img/edit.png";
 import coin from "../../img/redeem_coins.png";
 import Confetti from "react-confetti";
 
