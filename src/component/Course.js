@@ -20,7 +20,7 @@ const Course = () => {
             <img
               className="learnmore-image"
               src={insurance}
-              alt="Expense Image"
+              alt="Insurance"
             />
 
             <div className="learnmore-title">What is</div>
@@ -39,7 +39,7 @@ const Course = () => {
             <img
               className="learnmore-image"
               src={investing}
-              alt="Expense Image"
+              alt="Investing"
             />
 
             <p></p>
@@ -60,11 +60,10 @@ const Course = () => {
             className="expense-image"
             style={{ height: "60px", width: "60px" }}
             src={video}
-            alt="Expense Image"
+            alt="Video"
             onClick={() => {
               window.location.href = "https://youtu.be/SS-0dXz98Xo";
             }}
-            href=""
           />
           <div className="text-container" style={{ paddingLeft: "30px" }}>
             <h2 className="title">
@@ -79,8 +78,10 @@ const Course = () => {
             className="expense-image"
             style={{ height: "60px", width: "60px" }}
             src={video}
-            alt="Expense Image"
-            onclick="openPopup('https://youtu.be/SS-0dXz98Xo')"
+            alt="Video"
+            onClick={() => {
+              window.location.href = "https://youtu.be/SS-0dXz98Xo";
+            }}
           />
           <div className="text-container" style={{ paddingLeft: "30px" }}>
             <h2 className="title">
@@ -95,8 +96,10 @@ const Course = () => {
             className="expense-image"
             style={{ height: "60px", width: "60px" }}
             src={video}
-            alt="Expense Image"
-            onclick="openPopup('https://youtu.be/SS-0dXz98Xo')"
+            alt="Video"
+            onClick={() => {
+              window.location.href = "https://youtu.be/SS-0dXz98Xo";
+            }}
           />
           <div className="text-container" style={{ paddingLeft: "30px" }}>
             <h2 className="title">

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "../../style/Transaction.css";
 import successSound from "../../music/treasure.mp3";
 
@@ -9,9 +9,7 @@ const Transaction = ({
   setIsTransaction,
   setBalanceNew,
 }) => {
-  const [openSuccess, setOpenSuccess] = useState(false);
   const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
 
   const audio = new Audio(successSound);
@@ -27,17 +25,14 @@ const Transaction = ({
       expense: balance.expense,
     };
 
-    console.log(Array.isArray(existingData));
-
     const data = {
       name: name,
       amount: amount,
       sign: sign,
     };
-    console.log(Array.isArray(existingData));
+
     if (Array.isArray(existingData)) {
       existingData.push(data);
-
       localStorage.setItem("Transaction", JSON.stringify(existingData));
     } else {
       localStorage.setItem("Transaction", JSON.stringify([data]));
@@ -54,7 +49,6 @@ const Transaction = ({
 
     localStorage.setItem("Balance", JSON.stringify(newBalance));
 
-    setOpenSuccess(false);
     setVisible(false);
   }
 
@@ -111,7 +105,7 @@ const Transaction = ({
             className="popup-title1-transaction-details"
             style={{ color: "#797979" }}
           >
-            A transaction can be an addition to the balance or an expenses.
+            A transaction can be an addition to the balance or an expense.
             Please click the correct button below
           </h3>
 

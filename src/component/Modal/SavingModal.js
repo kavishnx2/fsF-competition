@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "../../style/SavingModal.css";
 import successSound from "../../music/treasure.mp3";
 import link from "../../img/link_02.png";
@@ -8,16 +8,13 @@ const SavingModal = ({
   setVisible,
   isSavingNew,
   setIsSavingNew,
-  openSuccessSave,
   setOpenSuccessSave,
 }) => {
-  const [openSuccess, setOpenSuccess] = useState(false);
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [amount, setAmount] = useState("");
 
   const audio = new Audio(successSound);
-  audio.loop = false;
 
   function saveDataToLocalStorage() {
     const existingData = JSON.parse(localStorage.getItem("Saving"));
@@ -26,10 +23,9 @@ const SavingModal = ({
       date: date,
       amount: amount,
     };
-    console.log(Array.isArray(existingData));
+
     if (Array.isArray(existingData)) {
       existingData.push(data);
-
       localStorage.setItem("Saving", JSON.stringify(existingData));
     } else {
       localStorage.setItem("Saving", JSON.stringify([data]));
@@ -40,8 +36,6 @@ const SavingModal = ({
     localStorage.setItem("BalanceCoin", JSON.stringify(newCoin));
     setIsSavingNew(isSavingNew + 1);
     setVisible(false);
-
-    setOpenSuccess(false);
     setOpenSuccessSave(true);
   }
 
@@ -113,7 +107,7 @@ const SavingModal = ({
             style={{ color: "#484848" }}
           >
             Upload image
-            <img src={link} />
+            <img src={link} alt="Upload Icon" />
           </h3>
 
           <div className="button-container-saving-details">
