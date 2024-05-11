@@ -1,4 +1,4 @@
-import React from "react";;
+import React from "react";
 import video from "../img/Group 88.png";
 import "../style/Course.css";
 import insurance from "../img/insurance.png";
